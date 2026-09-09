@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:relay/router/router.dart';
 import 'package:window_manager/window_manager.dart';
 
@@ -23,7 +24,7 @@ void main() async {
     MaterialApp.router(
       routerConfig: router,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(brightness: Brightness.dark),
+      theme: ThemeData(fontFamily: GoogleFonts.inter().toString()),
     ),
   );
 }
